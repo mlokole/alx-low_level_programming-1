@@ -3,11 +3,12 @@
 /**
  * main - Entry point
  *
- * Return : Always 0 (Success)
+ * return : Always 0 (Success)
  *
  */
 
 int main(void)
+
 {
 	char acharacter;
 	int ainteger;
