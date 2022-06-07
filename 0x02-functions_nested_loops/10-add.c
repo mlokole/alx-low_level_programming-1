@@ -3,7 +3,8 @@
 /**
  * add - main function
  *
- * @a, @b: integers to be added
+ * @a: first integer to be added
+ * @b: second integer to be added
  *
  * Return: addition of a and b
  */
