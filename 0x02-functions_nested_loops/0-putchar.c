@@ -9,7 +9,15 @@
  */
 int main(void)
 {
-	putchar("_putchar\n");
+	char c[] = "_putchar";
+	int n;
+
+	for (n = 0; n <= 8; n++)
+	{
+		putchar(c[n]);
+	}
+
+	putchar('\n');
 
 	return (0);
 }
