@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * print_number - function prints an integer
+ * print_number - main function
  *
  * @n: integer to be printed
+ *
+ * Return: result is an integer
  */
 
 void print_number(int n)
