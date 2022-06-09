@@ -6,7 +6,7 @@
  * @month: month in number format
  * @day: day of month
  * @year: year
- * Return: void
+ * Return: date considering leap year
  */
 
 void print_remaining_days(int month, int day, int year)
