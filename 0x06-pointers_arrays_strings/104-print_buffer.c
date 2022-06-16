@@ -28,14 +28,14 @@ void print_buffer(char *b, int size)
 					printf(" ");
 			}
 			printf(" ");
-			for (z = i; z < i + 10; z++)
+			for (k = i; k < i + 10; k++)
 			{
-				if (z >= size)
+				if (k >= size)
 					break;
-				if (*(b + z) < 32 || *(b + z) > 126)
+				if (*(b + k) < 32 || *(b + k) > 126)
 					printf("%c", '.');
 				else
-					printf("%c", *(b + z));
+					printf("%c", *(b + k));
 			}
 			printf("\n");
 		}
