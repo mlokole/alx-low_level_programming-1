@@ -5,11 +5,12 @@
  * print_buffer - prints a buffer
  * @b: buffer to be printed
  * @size: number of bytes from the buffer
+ *
+ * Return: nothing
  */
 void print_buffer(char *b, int size)
 {
-	int byte;
-	int num;
+	int byte, num;
 
 	for (byte = 0; byte < size; byte += 10)
 	{
