@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -21,7 +22,7 @@ char *argstostr(int ac, char **av)
 		for (i = 0; av[num][i] != '\0'; i++)
 			size++;
 	}
-	size++;
+	size += (ac + 1);
 
 	str = malloc(size * sizeof(char));
 	if (str == NULL)
@@ -32,10 +33,12 @@ char *argstostr(int ac, char **av)
 	{
 		for (i = 0; av[num][i] != '\0'; i++)
 		{
-			str[j++] = av[num][i];
+			str[j] = av[num][i];
+			j++;
 		}
-		str[j++] = '\n';
+		str[j] = '\n';
+		j++;
 	}
-	str[size] = '\0';
+	str[j] = '\0';
 	return (str);
 }
