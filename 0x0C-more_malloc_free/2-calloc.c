@@ -1,5 +1,4 @@
 #include "main.h"
-#include "0-memset.c"
 #include <stdlib.h>
 
 /**
@@ -12,6 +11,8 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
+	char *c;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -19,6 +20,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 		return (NULL);
-	_memset(ptr, 0, (nmemb * size));
+	c = ptr;
+
+	for (i = 0; i < (nmemb * size); i++)
+		c[i] = '\0';
+
 	return (ptr);
 }
